@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <newsfeed.hindu.goku.com.thehindu.NotifyingScrollView
+        android:id="@+id/notififying_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <newsfeed.hindu.goku.com.thehindu.KenBurnsView
+                    android:id="@+id/image_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ken1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#7effffff" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardhome"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+
+                    card_view:cardBackgroundColor="#ffffffff"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#4db6ac"
+                            android:gravity="end|bottom"
+                            android:text="HinduHome  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/hinduhome_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardsport"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+                    card_view:cardBackgroundColor="#ffffffff"
+
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffff8e00"
+                            android:gravity="end|bottom"
+                            android:text="Sport  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/sports_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardinternational"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+                    card_view:cardBackgroundColor="#ffffffff"
+
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#2196f3"
+                            android:gravity="end|bottom"
+                            android:text="International  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/international_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardnational"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+                    card_view:cardBackgroundColor="#ffffffff"
+
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#9C27B0"
+                            android:gravity="end|bottom"
+                            android:text="National  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/national_icon"
+
+
+                            />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardbusiness"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+
+                    card_view:cardBackgroundColor="#ffffffff"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#E91E63"
+                            android:gravity="end|bottom"
+                            android:text="Business  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/business_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardopinion"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+
+                    card_view:cardBackgroundColor="#ffffffff"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#673AB7"
+                            android:gravity="end|bottom"
+                            android:text="Opinion  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/opinion_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardcriket"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+
+                    card_view:cardBackgroundColor="#ffffffff"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#2196F3"
+                            android:gravity="end|bottom"
+                            android:text="Cricket  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/cricket_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardfootball"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+
+                    card_view:cardBackgroundColor="#ffffffff"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#795548"
+                            android:gravity="end|bottom"
+                            android:text="Football  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/football_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardsci_tech"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+
+                    card_view:cardBackgroundColor="#ffffffff"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff59e10"
+                            android:gravity="end|bottom"
+                            android:text="Science  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/science_png" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardcinimaplus"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+
+                    card_view:cardBackgroundColor="#ffffffff"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#4CAF50"
+                            android:gravity="end|bottom"
+                            android:text="CinimaPlus "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/cinima_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardeducation"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+                    card_view:cardBackgroundColor="#ffffffff"
+
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#607D8B"
+                            android:gravity="end|bottom"
+                            android:text="Education  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/education_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardmetro"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+
+                    card_view:cardBackgroundColor="#ffffffff"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#F44336"
+                            android:gravity="end|bottom"
+                            android:text="Metroplus  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/metro_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardentertainment"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+                    card_view:cardBackgroundColor="#ffffffff"
+
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#AB47BC"
+                            android:gravity="end|bottom"
+                            android:text="Enterainment  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/entertainment_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+
+                    android:id="@+id/cardbooks"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="callactivity"
+                    card_view:cardBackgroundColor="#ffffffff"
+                    card_view:cardCornerRadius="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <newsfeed.hindu.goku.com.thehindu.Gfont
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#8BC34A"
+                            android:gravity="end|bottom"
+                            android:text="Books  "
+                            android:textColor="#fff"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/books_icon" />
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </newsfeed.hindu.goku.com.thehindu.NotifyingScrollView>
+
+    <ImageView
+        android:id="@+id/fake_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ab" />
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+
+        />
+
+    <ImageView
+        android:id="@+id/header_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:src="@drawable/header_icon" />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settings_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="opensettings"
+        fab:fab_colorNormal="#ff383838"
+        fab:fab_colorPressed="#ff424242"
+        fab:fab_icon="@drawable/settings_icon"
+
+        />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saved_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/settings_fb"
+        android:layout_alignParentRight="true"
+        android:onClick="opensave"
+        fab:fab_colorNormal="#fdf51101"
+        fab:fab_colorPressed="#fde50f01"
+        fab:fab_icon="@drawable/save_fb"
+
+        />
+
+
+</RelativeLayout>

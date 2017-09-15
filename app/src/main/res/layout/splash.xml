@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="10dp"
+    >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:src="@drawable/hindu"
+    android:layout_centerInParent="true"
+    android:scaleType="centerInside"
+    android:id="@+id/i1"
+    />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/hindu2"
+        android:layout_gravity="center"
+        android:id="@+id/i2"
+        android:layout_above="@+id/i1"
+
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/hindu3"
+        android:layout_gravity="center"
+        android:id="@+id/i3"
+        android:layout_below="@+id/i1"
+
+        />
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/i3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom|center"
+        android:id="@+id/linear"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="powered by "
+        android:gravity="center_vertical"
+        android:textStyle="italic"
+        android:textColor="#111111"
+        android:id="@+id/t1"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:textStyle="italic|bold"
+            android:text="Falcon"
+            android:gravity="center_vertical"
+            android:textColor="#111111"
+            android:id="@+id/t2"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/fal"
+            android:src="@drawable/falcon"
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>

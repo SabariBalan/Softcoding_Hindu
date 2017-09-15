@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e61f1f1f"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme"
+        app:theme="@style/ToolbarCustomIconColor"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/toolbar"
+                android:layout_margin="7dp"
+                android:background="#ff282828"
+                card_view:cardBackgroundColor="#ff282828"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/toolbar"
+
+                        android:layout_weight="3"
+                        android:background="#424242"
+                        android:orientation="vertical">
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#424242"
+                            card_view:cardBackgroundColor="#424242"
+
+                            card_view:cardCornerRadius="0dp"
+                            card_view:cardElevation="5dp"
+
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#424242"
+                                android:orientation="vertical"
+
+                                >
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/gokul"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="7dp"
+                                    android:gravity="center"
+                                    android:text="Gokul Prabhu"
+                                    android:textSize="20sp" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/toolbar"
+                        android:layout_weight="1"
+                        android:background="#424242"
+                        android:orientation="vertical">
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#424242"
+                            card_view:cardBackgroundColor="#424242"
+
+                            card_view:cardCornerRadius="0dp"
+                            card_view:cardElevation="5dp"
+
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#424242"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/phone_fb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/gmail_fb"
+                                    fab:fab_colorNormal="#ff229f05"
+                                    fab:fab_colorPressed="#ff229305"
+                                    fab:fab_icon="@drawable/call" />
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/gmail_fb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_centerHorizontal="true"
+                                    fab:fab_colorNormal="#ffca1c00"
+                                    fab:fab_colorPressed="#ffb11c00"
+
+                                    fab:fab_icon="@drawable/gmail" />
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/face_fb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignTop="@+id/gmail_fb"
+                                    fab:fab_colorNormal="#ff354693"
+                                    fab:fab_colorPressed="#ff345b9f"
+                                    fab:fab_icon="@drawable/fb" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_margin="7dp"
+                android:background="#424242"
+                card_view:cardBackgroundColor="#ff282828"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/toolbar"
+
+                        android:layout_weight="3"
+                        android:background="#424242"
+                        android:orientation="vertical">
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#424242"
+                            card_view:cardBackgroundColor="#424242"
+
+                            card_view:cardCornerRadius="0dp"
+                            card_view:cardElevation="5dp"
+
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#424242"
+                                android:orientation="vertical"
+
+                                >
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/sabari" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="7dp"
+                                    android:gravity="center"
+                                    android:text="Sabari Balan"
+                                    android:textSize="20sp" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/toolbar"
+                        android:layout_weight="1"
+                        android:background="#424242"
+                        android:orientation="vertical">
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#424242"
+                            card_view:cardBackgroundColor="#424242"
+
+                            card_view:cardCornerRadius="0dp"
+                            card_view:cardElevation="5dp"
+
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#424242"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/phone_fb2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/gmail_fb"
+                                    fab:fab_colorNormal="#ff229f05"
+                                    fab:fab_colorPressed="#ff229305"
+                                    fab:fab_icon="@drawable/call" />
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/gmail_fb2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_centerHorizontal="true"
+                                    fab:fab_colorNormal="#ffca1c00"
+                                    fab:fab_colorPressed="#ffb11c00"
+
+                                    fab:fab_icon="@drawable/gmail" />
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/face_fb2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignTop="@+id/gmail_fb"
+                                    fab:fab_colorNormal="#ff354693"
+                                    fab:fab_colorPressed="#ff345b9f"
+                                    fab:fab_icon="@drawable/fb" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_margin="7dp"
+                android:background="#424242"
+                card_view:cardBackgroundColor="#ff282828"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/toolbar"
+
+                        android:layout_weight="3"
+                        android:background="#424242"
+                        android:orientation="vertical">
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#424242"
+                            card_view:cardBackgroundColor="#424242"
+
+                            card_view:cardCornerRadius="0dp"
+                            card_view:cardElevation="5dp"
+
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#424242"
+                                android:orientation="vertical"
+
+                                >
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/mohan" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="7dp"
+                                    android:gravity="center"
+                                    android:text="Mohan"
+                                    android:textSize="20sp" />
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/toolbar"
+                        android:layout_weight="1"
+                        android:background="#424242"
+                        android:orientation="vertical">
+
+
+                        <android.support.v7.widget.CardView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#424242"
+                            card_view:cardBackgroundColor="#424242"
+
+                            card_view:cardCornerRadius="0dp"
+                            card_view:cardElevation="5dp"
+
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#424242"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/phone_fb3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignTop="@+id/gmail_fb"
+                                    fab:fab_colorNormal="#ff229f05"
+                                    fab:fab_colorPressed="#ff229305"
+                                    fab:fab_icon="@drawable/call" />
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/gmail_fb3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_centerHorizontal="true"
+                                    fab:fab_colorNormal="#ffca1c00"
+                                    fab:fab_colorPressed="#ffb11c00"
+
+                                    fab:fab_icon="@drawable/gmail" />
+
+                                <com.getbase.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/face_fb3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignTop="@+id/gmail_fb"
+                                    fab:fab_colorNormal="#ff354693"
+                                    fab:fab_colorPressed="#ff345b9f"
+                                    fab:fab_icon="@drawable/fb" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

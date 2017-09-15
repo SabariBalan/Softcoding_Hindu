@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white_color">#FFF</color>
+    <color name="black_color">#000</color>
+
+    <!--MainActivity and activity_main-->
+    <color name="main_swipeview">#FFF</color>
+    <color name="main_relative1">#FFF</color>
+    <color name="main_listview">#FFF</color>
+
+    <!--Home And home_main-->
+    <color name="homemain_relative1">#FFF</color>
+    <color name="homemain_drawer">#fff</color>
+    <color name="homemain_contentframe">#FFF</color>
+    <color name="homemain_leftdrawer">#FFF</color>
+    <color name="homemain_leftlist">#FFF</color>
+
+    <!--Home and home_activity -->
+    <color name="homeact_relative1">#FFF</color>
+    <color name="homeact_linear1">#FFF</color>
+    <color name="homeact_linear2">#ffececec</color>
+    <color name="homeact_text1">#fff</color>
+
+    <color name="homeact_divider">#000</color>
+    <color name="homeact_rec_fav">#f00</color>
+
+    <!--CustomList and list_item -->
+    <color name="list_linear1">#ffd5d5d5</color>
+    <color name="list_divider">#d642a5f5</color>
+    <color name="list_relative1">#FFF</color>
+    <color name="list_relative2">#FFF</color>
+    <color name="list_title">#fff</color>
+    <color name="list_content">#ff0c0c0c</color>
+    <color name="list_date">#ff000000</color>
+    <color name="list_titlebg">#d642a5f5</color>
+    <color name="list_contentbg">#fff</color>
+    <color name="list_datebg">#fff</color>
+
+
+    <!--PostActivity and postview-->
+    <color name="post_linear">#fff</color>
+    <color name="post_swipe">#fff</color>
+    <color name="post_scroll">#fff</color>
+    <color name="post_linear2">#fff</color>
+    <color name="post_title">#fff</color>
+    <color name="post_titlebg">#ff02bdcb</color>
+    <color name="post_text">#000</color>
+    <color name="post_textbg">#fff</color>
+    <color name="post_divider">#ffffffff</color>
+
+
+
+
+
+</resources>

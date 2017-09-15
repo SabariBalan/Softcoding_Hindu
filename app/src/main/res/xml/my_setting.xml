@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="app_theme"
+        android:title="Use Light theme">
+
+    </SwitchPreference>
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="notification_option"
+        android:title="Notifications" />
+    <ListPreference
+        android:defaultValue="2"
+        android:dialogTitle="Choose Textsize"
+        android:entries="@array/text_size"
+        android:entryValues="@array/size_value"
+        android:key="text_size"
+        android:title="TextSize" />
+
+
+    <PreferenceScreen
+        android:key="About"
+        android:title="About">
+        <intent
+            android:targetClass="newsfeed.hindu.goku.com.thehindu.About"
+            android:targetPackage="newsfeed.hindu.goku.com.thehindu" />
+    </PreferenceScreen>
+</PreferenceScreen>
